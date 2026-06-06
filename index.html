@@ -307,6 +307,29 @@
   .slide-dots span { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: background 0.3s; }
   .slide-dots span.on { background: var(--gold); }
 
+  .wa-pill {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(13,13,13,0.75);
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    text-decoration: none;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 8px 14px;
+    border-radius: 100px;
+    backdrop-filter: blur(6px);
+    transition: background 0.3s, color 0.3s;
+  }
+  .wa-pill:hover { background: var(--gold); color: var(--dark); }
+  .wa-pill svg { width: 14px; height: 14px; flex-shrink: 0; }
+
   #contacto .contact-icon { width: 54px; height: 54px; font-size: 21px; }
   #contacto .contact-label { font-size: 13.5px; letter-spacing: 3px; }
   #contacto .contact-value { font-size: 21px; }
@@ -321,6 +344,10 @@
   <h1 class="hero-name">Chef <span>Juanse</span></h1>
   <p class="hero-sub">Private Dining</p>
   <div class="slideshow" id="slideshow">
+    <a class="wa-pill" href="https://wa.me/17874790903" target="_blank">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.121 1.523 5.855L0 24l6.338-1.499A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.854 0-3.6-.5-5.109-1.375l-.361-.215-3.762.89.952-3.668-.236-.376A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+      Reservar
+    </a>
     <div class="slide active"><img src="images/Hero1.jpg" alt="Chef Juanse"></div>
     <div class="slide"><img src="images/Hero2.jpg" alt="Chef Juanse - plato"></div>
     <div class="slide"><img src="images/Hero3.jpg" alt="Chef Juanse - experiencia"></div>
