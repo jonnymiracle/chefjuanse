@@ -351,7 +351,6 @@
     <div class="slide active"><img src="images/Hero1.jpg" alt="Chef Juanse"></div>
     <div class="slide"><img src="images/Hero2.jpg" alt="Chef Juanse - plato"></div>
     <div class="slide"><img src="images/Hero3.jpg" alt="Chef Juanse - experiencia"></div>
-    <div class="slide-dots" id="slideDots"></div>
   </div>
   <p class="tagline">Culinaria de lujo en la comodidad de tu hogar</p>
   <p class="tagline-2">Culinaria de lujo para residencias y botes.</p>
@@ -473,11 +472,8 @@ document.getElementById("lightbox").addEventListener("click",function(e){ if(e.t
 <script>
 (function(){
   const slides = document.querySelectorAll('#slideshow .slide');
-  const dotsBox = document.getElementById('slideDots');
   let idx = 0;
-  slides.forEach((_,i)=>{ const d=document.createElement('span'); if(i===0)d.className='on'; d.onclick=()=>go(i); dotsBox.appendChild(d); });
-  const dots = dotsBox.querySelectorAll('span');
-  function go(n){ slides[idx].classList.remove('active'); dots[idx].classList.remove('on'); idx=n; slides[idx].classList.add('active'); dots[idx].classList.add('on'); }
+  function go(n){ slides[idx].classList.remove('active'); idx=n; slides[idx].classList.add('active'); }
   setInterval(()=>{ go((idx+1)%slides.length); }, 4000);
 })();
 </script>
