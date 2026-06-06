@@ -142,6 +142,7 @@
     margin: 0 auto;
     padding: 80px 24px;
     border-top: 1px solid #222;
+    text-align: center;
   }
 
   .section-label {
@@ -150,6 +151,7 @@
     text-transform: uppercase;
     color: var(--gold);
     margin-bottom: 40px;
+    text-align: center;
   }
 
   /* ── SERVICES ── */
@@ -173,6 +175,7 @@
     font-weight: 400;
     margin-bottom: 10px;
     color: var(--warm);
+    text-align: center;
   }
 
   .service-card p {
@@ -180,6 +183,7 @@
     color: var(--muted);
     line-height: 1.8;
     letter-spacing: 0.5px;
+    text-align: center;
   }
 
   /* ── CONTACT ── */
@@ -193,8 +197,10 @@
 
   .contact-item {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 20px;
+    text-align: center;
+    gap: 12px;
     padding-bottom: 20px;
     border-bottom: 1px solid #1e1e1e;
   }
@@ -222,7 +228,8 @@
     font-size: 14px;
     color: var(--warm);
     overflow-wrap: break-word;
-    word-break: break-all;
+    word-break: break-word;
+    text-align: center;
   }
 
   .contact-value a {
@@ -283,7 +290,7 @@
   #contacto .contact-icon { width: 54px; height: 54px; font-size: 21px; }
   #contacto .contact-label { font-size: 13.5px; letter-spacing: 3px; }
   #contacto .contact-value { font-size: 21px; }
-  #contacto .contact-item { gap: 30px; padding-bottom: 30px; }
+  #contacto .contact-item { gap: 16px; padding-bottom: 30px; }
   #contacto .contact-list { gap: 30px; }
 </style>
 </head>
